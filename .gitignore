@@ -3,5 +3,7 @@ upgrade/*
 themes/index.php
 plugins/index.php
 index.php
-
+.DS_Store
+themes/.DS_Store
+plugins/.DS_Store
 
