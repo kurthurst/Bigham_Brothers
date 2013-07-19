@@ -1,0 +1,9 @@
+uploads/*
+upgrade/*
+plugins/askimet/*
+plugins/index.php
+plugins/hello.php
+themes/index.php
+themes/twentyeleven/*
+themes/twentytwelve/*
+

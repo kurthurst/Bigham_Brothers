@@ -1,0 +1,63 @@
+/* Contains site colors and overal layout specs */
+
+html{
+	background: $dkgrey;
+	padding:0;
+}
+body{margin:0}
+.main-wrapper {
+	background: white;
+	margin-top:0;
+	min-width:1110px;
+}
+@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation:portrait){
+.main-wrapper {
+	min-width:auto;
+}
+}
+
+.claustrophobic {
+	padding:1em;
+}
+
+.logo h1 a, .logo h1 a:active, .logo h1 a:visited, .logo h1 a:hover {
+	text-decoration:none;
+	width:auto;
+	max-width:100%;
+	height:auto;
+	display:block;
+	background: transparent url(../img/logo.png) no-repeat 0 0;
+	direction:ltr;
+	text-indent: -99999px;
+	cursor:hand;
+}
+.top-links {padding-top: 1em;}
+.search {padding-top: 2em;}
+.top-search-text { width:80%;}
+
+.attachment-thumbnail {
+	display:inline;
+	float:left;
+	margin-right: 1em;
+	padding:3px;
+	background: #4e4e4e;
+
+}
+
+article {
+	img {
+		padding:6px;
+	background: #4e4e4e;
+	}
+}
+
+.footer {
+	background:#1a1a1a;
+}
+.copy {
+	text-align:center;
+	font-size:10px;
+}
+.bottom{
+	margin-bottom:0;
+}

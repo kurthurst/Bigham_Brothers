@@ -1,0 +1,9 @@
+/* defining style for links */
+
+a {
+	color: $links;
+}
+
+a:visited, a:hover {
+	color: $linksHover;
+}

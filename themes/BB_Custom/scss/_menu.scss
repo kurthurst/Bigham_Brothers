@@ -1,0 +1,74 @@
+/* Contains css for site menus */
+$radius: 5px;
+
+ul.menu-primary, ul.menu-secondary, ul.menu-top{
+	height:auto;
+	padding-left:0px;
+	li {
+		display:inline;
+		a {
+			@include border-top-left-radius(5px);
+			@include border-top-right-radius(5px);
+			text-decoration:none;
+			padding: .8em;
+			background: $links;		
+			color: white;
+			font-weight: bold;
+			border:solid 1px #327E04;
+			border-bottom: none;
+			line-height:3em;
+			
+		}
+		a:hover {
+			background: #67b021;
+		}
+	}
+	li.current-menu-item {
+		a {
+			background: white;
+			color: $links;
+		}
+	}
+}
+
+ul.menu-secondary, ul.menu-top {
+	li {
+		a, a:visited {
+			background: #2a2a2a;
+			color: white;
+			border:solid 1px #1a1a1a;
+			border-bottom:none;
+		}
+
+		a:hover {
+			background: #4a4a4a;
+		}
+	}
+}
+
+ul.menu-top {
+	li {
+		a, a:visited {
+			padding: .5em;
+			font-size: 9px;
+			line-height: 10px;
+			font-weight:normal;
+		}
+		
+	}
+}
+
+
+ul.menu-foot {
+	width:100%;
+	height:auto;
+	padding-left:0;
+	text-align:center;
+	li {
+		display:inline;
+		a {
+			text-decoration:none;
+			padding:1em .5em;
+		}
+	}
+}

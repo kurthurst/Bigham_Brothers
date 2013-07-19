@@ -1,0 +1,54 @@
+/* Contains css for site sidebars */
+
+.sidebar {
+	@include border-top-left-radius(5px);
+	@include border-top-right-radius(5px);
+	@include background-image(linear-gradient(bottom, white, #9a9a9a));
+	padding: 1em;
+	@include single-box-shadow(#8a8a8a, 0, -3px, 3px);
+	h2 {
+		color: $green;
+		border-bottom: solid 2px #2a2a2a;
+	}
+
+	.widget {
+
+		border-bottom: solid 2px #2a2a2a;
+		margin-bottom:1em;
+		ul {
+			padding-left:0;
+			li {
+				list-style:none;
+				background: white;
+				padding: 1em .5em;
+				@include border-top-left-radius(5px);
+				@include border-top-right-radius(5px);
+				@include single-box-shadow(#8a8a8a, 0, -2px, 2px);
+				cursor:pointer;
+				a {
+					text-decoration:none;
+				}
+				span.post-date {
+					display:block;
+					background: #9a9a9a;
+					border-bottom:solid 1px #8a8a8a;
+					color:white;
+					font-size:12px;
+					padding-left: .5em;
+				}
+				
+
+			}
+
+		}
+	}
+	a {
+		text-decoration:none;
+
+	}
+	a.more:before {
+		content: "\25B6";
+		padding-right: .2em;
+
+	}
+}
