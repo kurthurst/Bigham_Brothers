@@ -1,6 +1,6 @@
 uploads/*
 upgrade/*
-plugins/askimet/*
+plugins/akismet/*
 plugins/index.php
 plugins/hello.php
 themes/index.php
