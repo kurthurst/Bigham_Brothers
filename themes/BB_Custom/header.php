@@ -21,7 +21,7 @@
                 </div>
                 <div class="c3 top-links">
                     <ul class="menu-top">
-                        <li><a href="<?php bloginfo('url'); ?>/events">Visit us at trade shows</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/events#tribe-events-pg-template">Visit us at trade shows</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/about">About our company</a></li>
                     </ul>
 
