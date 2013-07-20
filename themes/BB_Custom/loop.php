@@ -33,7 +33,11 @@
 <?php wp_reset_query(); ?>
 <?php } elseif(is_page()){?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div class="row"><div class="c12"><h2><?php the_title(); ?></h2></div></div>
+<div class="row"><div class="c12"><h2><?php the_title(); ?></h2>
+<?php if(have_post_thumbnail()){
+  the_post_thumbnail('large');
+} else {} ?>
+</div></div>
 <div class="row clearfix">
   <div class="c8">
     <?php if (!is_page(array('all-products', 'literature'))) { ?>
