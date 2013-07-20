@@ -67,7 +67,7 @@
             </div>
           </div>
         <?php } else {
-          <?php the_content(); ?>
+         the_content(); 
         } ?>
 </div>
 </div>
