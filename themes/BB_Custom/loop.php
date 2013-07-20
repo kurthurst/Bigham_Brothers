@@ -40,7 +40,7 @@
 </div></div>
 <div class="row clearfix">
   <div class="c8">
-    <?php if (!is_page(array('all-products', 'literature'))) { ?>
+    <?php if (!is_page(array('all-products', 'literature', 'about'))) { ?>
           <div id="tabs">
             <ul>
               <li><a href="#tabs-1">Overview</a></li>

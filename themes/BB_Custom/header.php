@@ -21,8 +21,8 @@
                 </div>
                 <div class="c3 top-links">
                     <ul class="menu-top">
-                        <li><a href="#">Visit us at trade shows</a></li>
-                        <li><a href="#">About our company</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/events">Visit us at trade shows</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/about">About our company</a></li>
                     </ul>
 
                 </div>
@@ -37,7 +37,7 @@
                 <div class="c4">
                     <ul class="menu-secondary">
                         <li><a href="#">Build your tool</a></li>
-                        <li><a href="/find-a-dealer/">Find a dealer</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
                     </ul>
                 </div>
             </div>
