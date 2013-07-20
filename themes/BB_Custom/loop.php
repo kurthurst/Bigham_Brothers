@@ -66,7 +66,9 @@
             	<?php echo get_post_meta($post->ID, 'support', true); ?>
             </div>
           </div>
-        <?php } else {} ?>
+        <?php } else {
+          <?php the_content(); ?>
+        } ?>
 </div>
 </div>
 	<?php endwhile; else: ?>
