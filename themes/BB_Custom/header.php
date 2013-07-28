@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">   
         <?php wp_head(); ?>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" />
         <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/global.css" type="text/css" />
@@ -20,22 +20,22 @@
                     <h1><a href="<?php bloginfo(url); ?>" title="<?php bloginfo(name); ?>"><?php bloginfo(name); ?></a></h1>
                 </div>
                 <div class="c3 top-links">
-                    <ul class="menu-top">
+                    <ul class="menu-top desktop">
                         <li><a href="<?php bloginfo('url'); ?>/events#tribe-events-pg-template">Visit us at trade shows</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/about">About our company</a></li>
                     </ul>
 
                 </div>
-                <div class="c3 search">
+                <div class="c3 search end">
                     <?php get_search_form(); ?>
                 </div>
             </div>
             <div class="row clearfix">
                 <div class="c8">
-                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'menu-primary') ); ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'menu-primary desktop') ); ?>
                 </div>
-                <div class="c4">
-                    <ul class="menu-secondary">
+                <div class="c4 end">
+                    <ul class="menu-secondary desktop">
                         <li><a href="#">Build your tool</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
                     </ul>

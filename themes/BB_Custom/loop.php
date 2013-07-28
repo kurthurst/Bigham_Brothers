@@ -3,7 +3,7 @@
   <div class="c8">
     <?php echo do_shortcode( '[responsive_slider]' ); ?>
   </div>
-  <div class="c4">
+  <div class="c4 end">
     <?php get_sidebar('main'); ?>
   </div>
 

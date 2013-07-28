@@ -258,3 +258,12 @@
   };
 
 })( jQuery );
+
+
+// Initialize the script
+jQuery(document).ready(function() {
+	jQuery('#responsive-menu-button').sidr();
+	if ( jQuery('#wpadminbar').length > 0 ) {
+		jQuery('#mobile-header').css({top: 30});
+	}
+});

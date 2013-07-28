@@ -9,10 +9,11 @@
 			</div>
 		</div>
 
-        <script src="<?php bloginfo(template_url); ?>/js/plugins.js"></script>
-        <script src="<?php bloginfo(template_url); ?>/js/main-ck.js"></script>
-        <?php wp_footer(); ?>
+        
         
     </div><!-- close main wrapper -->
+    <script src="<?php bloginfo(template_url); ?>/js/plugins.js"></script>
+        <script src="<?php bloginfo(template_url); ?>/js/main-ck.js"></script>
+        <?php wp_footer(); ?>
     </body>
 </html>
