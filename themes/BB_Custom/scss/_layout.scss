@@ -8,12 +8,6 @@ body{margin:0}
 .main-wrapper {
 	background: white;
 	margin-top:0;
-	min-width:1110px;
-}
-@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation:portrait){
-.main-wrapper {
-	min-width:auto;
-}
 }
 
 .claustrophobic {
@@ -26,7 +20,6 @@ body{margin:0}
 	max-width:100%;
 	height:auto;
 	display:block;
-	background: transparent url(../img/logo.png) no-repeat 0 0;
 	direction:ltr;
 	text-indent: -99999px;
 	cursor:hand;
@@ -61,4 +54,8 @@ article {
 }
 .bottom{
 	margin-bottom:0;
+}
+
+#accordion {
+	display:none;
 }

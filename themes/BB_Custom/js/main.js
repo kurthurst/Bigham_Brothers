@@ -3,6 +3,9 @@ var bbjq = jQuery.noConflict();
 bbjq(function(){
 	bbjq('html').removeClass('no-js');
 	bbjq( "#tabs" ).tabs();
+	bbjq("#accordion").accordion({
+      heightStyle: "content"
+    });
 	bbjq('#menu-header').addClass('menu-primary clearfix');
 	bbjq('#menu-footer').addClass('menu-foot clearfix');
 	bbjq('.screen-reader-text').addClass('visuallyhidden');

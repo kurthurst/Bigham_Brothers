@@ -2,19 +2,82 @@
 @media (max-width: 480px) { 
 .desktop {display:none;}
 #mobile-header {display:block};
+#tabs{display:none;}
+#accordion{display:block}
+.claustrophobic {
+	padding: 1em 0 0 0;
+}
+.logo {
+		padding-top:25px;
+		margin-botton:0px;
+	}
+
+	.top-links{
+		display:none;
+	}
 
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 .desktop {display:none;}
-
+.claustrophobic {
+	padding: 1em 0 0 0;
+}
 #mobile-header {display:block;}
+#tabs{display:none;}
+#accordion{display:block}
+.logo {
+		padding-top:25px;
+		margin-botton:0px;
+	}
+
+	.top-links{
+		display:none;
+	}
 
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+.desktop {display:none;}
+.claustrophobic {
+	padding: 1em 0 0 0;
+}
+#mobile-header {display:block;}
+#tabs{display:none;}
+#accordion{display:block}
+.logo {
+		padding-top:25px;
+		margin-botton:0px;
+	}
 
+	.top-links{
+		display:none;
+	}
 
 }
+
+@media only screen
+and (-webkit-min-device-pixel-ratio : 2)
+and (orientation : landscape),only screen
+and (-webkit-min-device-pixel-ratio : 2)
+and (orientation : portrait) { 
+	#tabs{display:none;}
+#accordion{display:block}
+.claustrophobic {
+	padding: 1em 0 0 0;
+}
+	.main-wrapper{
+		width:auto;
+	}
+
+	.logo {
+		padding-top:25px;
+		margin-botton:0px;
+	}
+
+	.top-links{
+		display:none;
+	}
+ }

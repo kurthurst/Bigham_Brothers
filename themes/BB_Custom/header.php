@@ -17,7 +17,7 @@
         <div class="grid main-wrapper claustrophobic">
             <div class="row clearfix">
                 <div class="c6 logo">
-                    <h1><a href="<?php bloginfo(url); ?>" title="<?php bloginfo(name); ?>"><?php bloginfo(name); ?></a></h1>
+                    <h1><a href="<?php bloginfo(url); ?>" title="<?php bloginfo(name); ?>"><img src="<?php bloginfo(template_url); ?>/img/logo.png" alt="<?php bloginfo(name); ?>"/></a></h1>
                 </div>
                 <div class="c3 top-links">
                     <ul class="menu-top desktop">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="c4 end">
                     <ul class="menu-secondary desktop">
-                        <li><a href="#">Build your tool</a></li>
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
                     </ul>
                 </div>

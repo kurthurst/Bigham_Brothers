@@ -41,6 +41,28 @@
 <div class="row clearfix">
   <div class="c8">
     <?php if (!is_page(array('all-products', 'literature', 'about'))) { ?>
+          <div id="accordion">
+            <h3>Overview</h3>
+            <div>
+              <?php the_field('overview'); ?>
+            </div>
+            <h3>Features</h3>
+            <div>
+              <?php the_field('features'); ?>
+            </div>
+            <h3>Specifications</h3>
+            <div>
+              <?php the_field('specifications'); ?>
+            </div>
+            <h3>Compare</h3>
+            <div>
+              <?php the_field('compare'); ?>
+            </div>
+            <h3>Support</h3>
+            <div>
+              <?php the_field('support'); ?>
+            </div>
+          </div>
           <div id="tabs">
             <ul>
               <li><a href="#tabs-1">Overview</a></li>
@@ -51,19 +73,19 @@
 
             </ul>
             <div id="tabs-1">
-           <?php echo get_post_meta($post->ID, 'overview', true); ?>
+           <?php the_field('overview'); ?>
             </div>
             <div id="tabs-2">
-            	<?php echo get_post_meta($post->ID, 'features', true); ?>
+            	<?php the_field('features'); ?>
             </div>
             <div id="tabs-3">
-            	<?php echo get_post_meta($post->ID, 'specifications', true); ?>
+            	<?php the_field('specifications'); ?>
             </div>
             <div id="tabs-4">
-            	<?php echo get_post_meta($post->ID, 'compare', true); ?>
+            	<?php the_field('compare'); ?>
             </div>
             <div id="tabs-5">
-            	<?php echo get_post_meta($post->ID, 'support', true); ?>
+            	<?php the_field('support'); ?>
             </div>
           </div>
         <?php } else {

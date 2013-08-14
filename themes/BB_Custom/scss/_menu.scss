@@ -6,6 +6,7 @@ ul.menu-primary, ul.menu-secondary, ul.menu-top{
 	padding-left:0px;
 	li {
 		display:inline;
+    position:relative;
 		a {
 			@include border-top-left-radius(5px);
 			@include border-top-right-radius(5px);
@@ -22,7 +23,51 @@ ul.menu-primary, ul.menu-secondary, ul.menu-top{
 		a:hover {
 			background: #67b021;
 		}
+
+    ul {
+      display:none;
+      li {
+
+      }
+    }
 	}
+  li:hover, li.current-menu-item:hover {
+    ul {
+      display:block;
+      position:absolute;
+      top:.8em;
+      left:0;
+      padding-left:0;
+      width:inherit;
+      z-index:1000000;
+      li {
+        a {
+          @include border-top-left-radius(0);
+          @include border-top-right-radius(0);
+          width:135px;
+          display:block;
+          height:2em;
+          line-height:1.5em;
+          padding:.3em .5em;
+          background: $links;   
+          color: white;
+          letter-spacing:.1em;
+        }
+
+        a:hover {
+          background: #67b021;
+          padding-left: .8em;
+        }
+        a[title=secondary], a[title=primary]{
+          background: grey;
+          cursor:text;
+        }
+        a[title=secondary]:hover, a[title=primary]:hover{
+          padding-left:.5em;
+        }
+      }
+    }
+  }
 	li.current-menu-item {
 		a {
 			background: white;
