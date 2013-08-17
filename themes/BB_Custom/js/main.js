@@ -6,6 +6,12 @@ bbjq(function(){
 	bbjq("#accordion").accordion({
       heightStyle: "content"
     });
+    bbjq("#options-accordion").accordion({
+      heightStyle: "content"
+    });
+    bbjq("#options-accordion-2").accordion({
+      heightStyle: "content"
+    });
 	bbjq('#menu-header').addClass('menu-primary clearfix');
 	bbjq('#menu-footer').addClass('menu-foot clearfix');
 	bbjq('.screen-reader-text').addClass('visuallyhidden');

@@ -50,26 +50,51 @@
             <div>
               <?php the_field('features'); ?>
             </div>
-            <h3>Specifications</h3>
+            <h3>Options</h3>
             <div>
-              <?php the_field('specifications'); ?>
+              <div id="options-accordion">
+                <h3>Tool Bar</h3>
+                <div>
+                  <?php the_field('tool_bar'); ?>
+                </div>
+                <h3>Row Spacing</h3>
+                <div>
+                  <?php the_field('row_spacing'); ?>
+                </div>
+                <h3>Gang Type</h3>
+                <div>
+                  <?php the_field('gang_type'); ?>
+                </div>
+                <h3>Height Adjustment</h3>
+                <div>
+                  <?php the_field('height_adjustment'); ?>
+                </div>
+                <h3>Row Cleaner</h3>
+                <div>
+                  <?php the_field('row_cleaner'); ?>
+                </div>
+                <h3>Coulter</h3>
+                <div>
+                  <?php the_field('coulter'); ?>
+                </div>
+               </div>
             </div>
-            <h3>Compare</h3>
+            <h3>Parts and Manuals</h3>
             <div>
-              <?php the_field('compare'); ?>
+              <?php the_field('parts'); ?>
             </div>
-            <h3>Support</h3>
+            <h3>Gallery</h3>
             <div>
-              <?php the_field('support'); ?>
+              <?php the_field('gallery'); ?>
             </div>
           </div>
           <div id="tabs">
             <ul>
               <li><a href="#tabs-1">Overview</a></li>
               <li><a href="#tabs-2">Features</a></li>
-              <li><a href="#tabs-3">Specifications</a></li>
-              <li><a href="#tabs-4">Compare</a></li>
-              <li><a href="#tabs-5">Support</a></li>
+              <li><a href="#tabs-3">Options</a></li>
+              <li><a href="#tabs-4">Parts and Manuals</a></li>
+              <li><a href="#tabs-5">Gallery</a></li>
 
             </ul>
             <div id="tabs-1">
@@ -79,7 +104,32 @@
             	<?php the_field('features'); ?>
             </div>
             <div id="tabs-3">
-            	<?php the_field('specifications'); ?>
+            	<div id="options-accordion-2">
+                <h3>Tool Bar</h3>
+                <div>
+                  <?php the_field('tool_bar'); ?>
+                </div>
+                <h3>Row Spacing</h3>
+                <div>
+                  <?php the_field('row_spacing'); ?>
+                </div>
+                <h3>Gang Type</h3>
+                <div>
+                  <?php the_field('gang_type'); ?>
+                </div>
+                <h3>Height Adjustment</h3>
+                <div>
+                  <?php the_field('height_adjustment'); ?>
+                </div>
+                <h3>Row Cleaner</h3>
+                <div>
+                  <?php the_field('row_cleaner'); ?>
+                </div>
+                <h3>Coulter</h3>
+                <div>
+                  <?php the_field('coulter'); ?>
+                </div>
+               </div>
             </div>
             <div id="tabs-4">
             	<?php the_field('compare'); ?>
