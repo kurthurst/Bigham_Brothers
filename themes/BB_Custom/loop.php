@@ -4,6 +4,10 @@
     <?php echo do_shortcode( '[responsive_slider]' ); ?>
   </div>
   <div class="c4 end">
+                    <ul class="menu-secondary desktop">
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
+                    </ul>
     <?php get_sidebar('main'); ?>
   </div>
 
@@ -22,6 +26,13 @@
   <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
   <?php endif; ?>
   </div>
+  <div class="c4 end">
+                    <ul class="menu-secondary desktop">
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
+                    </ul>
+    <?php get_sidebar('main'); ?>
+  </div>
 </div>
 <?php wp_reset_query(); ?>
 <?php } elseif(is_page("find-a-dealer")){?>
@@ -29,18 +40,25 @@
   <div class="c8">
     <?php echo do_shortcode('[SLPLUS]'); ?>
   </div>
+  <div class="c4 end">
+                    <ul class="menu-secondary desktop">
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
+                    </ul>
+    <?php get_sidebar('main'); ?>
+  </div>
 </div>
 <?php wp_reset_query(); ?>
 <?php } elseif(is_page()){?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div class="row"><div class="c8"><h2><?php the_title(); ?></h2>
-<?php if(has_post_thumbnail()) { 
-        the_post_thumbnail('large');
-      } else {} ?>
-</div></div>
-<div class="row clearfix">
-  <div class="c8">
-    <?php if (!is_page(array('all-products', 'literature', 'about'))) { ?>
+  <div class="row clearfix">
+    <div class="c8">
+      <h2><?php the_title(); ?></h2>
+        <?php if(has_post_thumbnail()) { 
+                the_post_thumbnail('large');
+              } else {} ?>
+
+              <?php if (!is_page(array('all-products', 'literature', 'about'))) { ?>
           <div id="accordion">
             <h3>Overview</h3>
             <div>
@@ -101,10 +119,10 @@
            <?php the_field('overview'); ?>
             </div>
             <div id="tabs-2">
-            	<?php the_field('features'); ?>
+              <?php the_field('features'); ?>
             </div>
             <div id="tabs-3">
-            	<div id="options-accordion-2">
+              <div id="options-accordion-2">
                 <h3>Tool Bar</h3>
                 <div>
                   <?php the_field('tool_bar'); ?>
@@ -132,17 +150,25 @@
                </div>
             </div>
             <div id="tabs-4">
-            	<?php the_field('compare'); ?>
+              <?php the_field('parts'); ?>
             </div>
             <div id="tabs-5">
-            	<?php the_field('support'); ?>
+              <?php the_content(); ?>
             </div>
           </div>
         <?php } else {
          the_content(); 
         } ?>
-</div>
-</div>
+    </div>
+    <div class="c4 end">
+                    <ul class="menu-secondary desktop">
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
+                    </ul>
+        <?php get_sidebar('main'); ?>
+    </div>
+  </div>
+  
 	<?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
@@ -160,6 +186,13 @@
     </article>
 
     </div>
+    <div class="c4 end">
+                    <ul class="menu-secondary desktop">
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
+                    </ul>
+        <?php get_sidebar('main'); ?>
+    </div>
   </div>
 <?php endwhile; else: ?>
   <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
@@ -167,23 +200,31 @@
 <?php wp_reset_query();?>
 <?php } elseif(is_search()){?>
 <div class="row clearfix">
-  <div class="c7">
-<h2>Search results for: <?php echo get_search_query(); ?></h2>
-<p><?php echo $wp_query->found_posts; ?> result(s) found.</p>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <h3><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title(); ?></a></h3>
-  <article>
-    <?php 
-    $myOverview = get_post_meta($post->ID, 'overview', true);
-    if ($myOverview != null) {
-      echo '<p>' . $myOverview . '</p>';
-    } else {
-      the_excerpt(); } ?>
-  </article>
+  <div class="c8">
+    <h2>Search results for: <?php echo get_search_query(); ?></h2>
+      <p><?php echo $wp_query->found_posts; ?> result(s) found.</p>
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <h3><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title(); ?></a></h3>
+          <article>
+            <?php 
+            $myOverview = get_post_meta($post->ID, 'overview', true);
+            if ($myOverview != null) {
+              echo '<p>' . $myOverview . '</p>';
+            } else {
+              the_excerpt(); } ?>
+          </article>
 
 <?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
-</div></div>
+</div>
+<div class="c4 end">
+                    <ul class="menu-secondary desktop">
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
+                    </ul>
+        <?php get_sidebar('main'); ?>
+    </div>
+</div>
 <?php wp_reset_query();?>
 <?php } ?>

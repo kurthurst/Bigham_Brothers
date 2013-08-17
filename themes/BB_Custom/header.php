@@ -31,14 +31,8 @@
                 </div>
             </div>
             <div class="row clearfix">
-                <div class="c8">
+                <div class="c12">
                     <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'menu-primary desktop') ); ?>
-                </div>
-                <div class="c4 end">
-                    <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
-                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
-                    </ul>
                 </div>
             </div>
         <!--[if lt IE 7]>
