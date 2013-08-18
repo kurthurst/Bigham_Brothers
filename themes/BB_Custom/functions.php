@@ -47,3 +47,7 @@ function register_my_menus() {
   );
 }
 add_action( 'init', 'register_my_menus' );
+
+// enable custom post formats
+  add_theme_support('post-formats',array('aside','chat','gallery','image',
+  'link','quote','status','video','audio'));

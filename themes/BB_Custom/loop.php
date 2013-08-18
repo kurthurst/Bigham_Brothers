@@ -103,7 +103,7 @@
             </div>
             <h3>Gallery</h3>
             <div>
-              <?php the_field('gallery'); ?>
+              <?php the_content(); ?>
             </div>
           </div>
           <div id="tabs">

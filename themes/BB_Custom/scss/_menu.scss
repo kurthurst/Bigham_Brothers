@@ -44,7 +44,7 @@ ul.menu-primary, ul.menu-secondary, ul.menu-top{
         a {
           @include border-top-left-radius(0);
           @include border-top-right-radius(0);
-          width:185px;
+          width:215px;
           display:block;
           height:2em;
           line-height:1.5em;
@@ -52,6 +52,7 @@ ul.menu-primary, ul.menu-secondary, ul.menu-top{
           background: $links;   
           color: white;
           letter-spacing:.1em;
+          font-size:.8em;
         }
 
         a:hover {

@@ -11,6 +11,7 @@
         <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">   
         <?php wp_head(); ?>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" />
+        <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/fancybox/jquery.fancybox.css" type="text/css" />
         <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/global.css" type="text/css" />
     </head>
     <body>

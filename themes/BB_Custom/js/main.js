@@ -20,7 +20,7 @@ bbjq(function(){
      window.location=bbjq(this).find("a").attr("href");
      return false;
 	});
-
-	bbjq("#sidr-menu").sidr();
+	bbjq('dt.gallery-icon a').addClass('fancybox').attr('rel', 'gallery');
+	bbjq('.fancybox').fancybox();
 
 });
