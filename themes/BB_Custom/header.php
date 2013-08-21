@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" />
         <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/fancybox/jquery.fancybox.css" type="text/css" />
         <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/global.css" type="text/css" />
+        <script src="<?php bloginfo(template_url); ?>/fancybox/jquery.fancybox.pack.js"></script>
+        <script src="<?php bloginfo(template_url); ?>/js/main-ck.js"></script>
     </head>
     <body>
         <div class="grid main-wrapper claustrophobic">

@@ -12,8 +12,7 @@
         
         
     </div><!-- close main wrapper -->
-    	<script src="<?php bloginfo(template_url); ?>/fancybox/jquery.fancybox.pack.js"></script>
-        <script src="<?php bloginfo(template_url); ?>/js/main-ck.js"></script>
+    	
         <?php wp_footer(); ?>
     </body>
 </html>

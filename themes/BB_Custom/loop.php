@@ -58,7 +58,7 @@
                 the_post_thumbnail('large');
               } else {} ?>
 
-              <?php if (!is_page(array('all-products', 'literature', 'about'))) { ?>
+              <?php if (!is_page(array('all-products', 'literature', 'about', 'tillage', 'bed-preparation', 'cultivation', 'lilliston', 'tool-bars-and-accessories', 'newother'))) { ?>
           <div id="accordion">
             <h3>Overview</h3>
             <div>
@@ -70,32 +70,7 @@
             </div>
             <h3>Options</h3>
             <div>
-              <div id="options-accordion">
-                <h3>Tool Bar</h3>
-                <div>
-                  <?php the_field('tool_bar'); ?>
-                </div>
-                <h3>Row Spacing</h3>
-                <div>
-                  <?php the_field('row_spacing'); ?>
-                </div>
-                <h3>Gang Type</h3>
-                <div>
-                  <?php the_field('gang_type'); ?>
-                </div>
-                <h3>Height Adjustment</h3>
-                <div>
-                  <?php the_field('height_adjustment'); ?>
-                </div>
-                <h3>Row Cleaner</h3>
-                <div>
-                  <?php the_field('row_cleaner'); ?>
-                </div>
-                <h3>Coulter</h3>
-                <div>
-                  <?php the_field('coulter'); ?>
-                </div>
-               </div>
+              <?php include('product_options.php'); ?>
             </div>
             <h3>Parts and Manuals</h3>
             <div>
@@ -122,32 +97,7 @@
               <?php the_field('features'); ?>
             </div>
             <div id="tabs-3">
-              <div id="options-accordion-2">
-                <h3>Tool Bar</h3>
-                <div>
-                  <?php the_field('tool_bar'); ?>
-                </div>
-                <h3>Row Spacing</h3>
-                <div>
-                  <?php the_field('row_spacing'); ?>
-                </div>
-                <h3>Gang Type</h3>
-                <div>
-                  <?php the_field('gang_type'); ?>
-                </div>
-                <h3>Height Adjustment</h3>
-                <div>
-                  <?php the_field('height_adjustment'); ?>
-                </div>
-                <h3>Row Cleaner</h3>
-                <div>
-                  <?php the_field('row_cleaner'); ?>
-                </div>
-                <h3>Coulter</h3>
-                <div>
-                  <?php the_field('coulter'); ?>
-                </div>
-               </div>
+              <?php include('product_options_2.php'); ?>
             </div>
             <div id="tabs-4">
               <?php the_field('parts'); ?>
