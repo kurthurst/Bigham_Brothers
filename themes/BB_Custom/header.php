@@ -8,7 +8,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
-        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">   
+        <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+        <style type="text/css">
+            .no-fouc {display: none;}
+        </style>
+        <script type="text/javascript">
+          document.documentElement.className = 'no-fouc';
+        </script>   
         <?php wp_head(); ?>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" />
         <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/fancybox/jquery.fancybox.css" type="text/css" />

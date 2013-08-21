@@ -1,7 +1,7 @@
 var bbjq = jQuery.noConflict();
 
 bbjq(function(){
-	bbjq('html').removeClass('no-js');
+	bbjq('html').removeClass('no-js').removeClass('no-fouc');
 	bbjq( "#tabs" ).tabs();
 	bbjq("#accordion").accordion({
       heightStyle: "content"
