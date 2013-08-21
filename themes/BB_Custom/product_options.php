@@ -12,9 +12,9 @@
                 <div>
                   <?php the_field('tt_finishing_tools'); ?>
                 </div>
-                <h3>Guage Wheels</h3>
+                <h3>Gauge Wheels</h3>
                 <div>
-                  <?php the_field('tt_guage_wheels'); ?>
+                  <?php the_field('tt_gauge_wheels'); ?>
                 </div>
                 <h3>Other Options</h3>
                 <div>
