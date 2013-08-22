@@ -22,6 +22,6 @@ bbjq(function(){
 	});
 	bbjq('dt.gallery-icon a').addClass('fancybox').attr('rel', 'gallery');
 	bbjq('.fancybox').fancybox();
-	bbjq('.main-wrapper').fitvids();
+	bbjq('.main-wrapper').fitVids();
 
 });
