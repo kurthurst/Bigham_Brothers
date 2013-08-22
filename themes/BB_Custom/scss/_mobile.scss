@@ -7,6 +7,10 @@
 .claustrophobic {
 	padding: 1em 0 0 0;
 }
+dd.gallery-caption {
+	display:none;
+}
+
 .logo {
 		padding-top:25px;
 		margin-botton:0px;
@@ -24,6 +28,10 @@
 .claustrophobic {
 	padding: 1em 0 0 0;
 }
+dd.gallery-caption {
+	display:none;
+}
+
 #mobile-header {display:block;}
 #tabs{display:none;}
 #accordion{display:block}
@@ -65,6 +73,10 @@ and (-webkit-min-device-pixel-ratio : 2)
 and (orientation : portrait) { 
 	#tabs{display:none;}
 #accordion{display:block}
+dd.gallery-caption {
+	display:none;
+}
+
 .claustrophobic {
 	padding: 1em 0 0 0;
 }
