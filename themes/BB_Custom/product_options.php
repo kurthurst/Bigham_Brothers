@@ -87,7 +87,7 @@
                   <?php the_field('cp_accessories'); ?>
                 </div>
                </div>
-<?php } elseif (is_page(array('888-culti-lister', '888-cultivator'))) { ?>
+<?php } elseif (is_page(array('888-culti-lister', '888-cultivator'))){ ?>
 				<div id="options-accordion">
 					<h3>Tool Bar</h3>
 					<div>
@@ -121,7 +121,7 @@
 					<div>
 						<?php the_field('cl_other_options'); ?>
 					</div>
-
-<?php } else { ?>
+					</div>
+<?php } else {
 	the_field('options'); 
 } ?>
