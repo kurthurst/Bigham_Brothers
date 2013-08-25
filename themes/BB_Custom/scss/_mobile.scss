@@ -10,6 +10,9 @@
 dd.gallery-caption {
 	display:none;
 }
+.gallery-item {
+	width:50%!important;
+}
 
 .logo {
 		padding-top:25px;
@@ -30,6 +33,9 @@ dd.gallery-caption {
 }
 dd.gallery-caption {
 	display:none;
+}
+.gallery-item {
+	width:50%!important;
 }
 
 #mobile-header {display:block;}
@@ -75,6 +81,9 @@ and (orientation : portrait) {
 #accordion{display:block}
 dd.gallery-caption {
 	display:none;
+}
+.gallery-item {
+	width:50%!important;
 }
 
 .claustrophobic {

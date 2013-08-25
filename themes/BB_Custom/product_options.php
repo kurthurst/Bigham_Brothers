@@ -26,7 +26,7 @@
 				<div id="options-accordion">
                 <h3>Tool Bar</h3>
                 <div>
-                  <?php the_field('tt_tool_bar'); ?>
+                  <?php the_field('st_tool_bar'); ?>
                 </div>
                 <h3>Row Spacing</h3>
                 <div>
@@ -76,7 +76,7 @@
 				<div id="options-accordion">
                 <h3>Tool Bar</h3>
                 <div>
-                  <?php the_field('cp_tool_bars'); ?>
+                  <?php the_field('cp_tool_bar'); ?>
                 </div>
                 <h3>Chisel Clamps</h3>
                 <div>

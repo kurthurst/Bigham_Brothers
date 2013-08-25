@@ -80,14 +80,19 @@
             <div>
               <?php the_content(); ?>
             </div>
+            <h3>Video</h3>
+            <div>
+              <?php the_field('video'); ?>
+            </div>
           </div>
           <div id="tabs">
             <ul>
               <li><a href="#tabs-1">Overview</a></li>
               <li><a href="#tabs-2">Features</a></li>
               <li><a href="#tabs-3">Options</a></li>
-              <li><a href="#tabs-4">Parts and Manuals</a></li>
+              <li><a href="#tabs-4">Parts/Manuals</a></li>
               <li><a href="#tabs-5">Gallery</a></li>
+              <li><a href="#tabs-6">Video</a></li>
 
             </ul>
             <div id="tabs-1">
@@ -104,6 +109,9 @@
             </div>
             <div id="tabs-5">
               <?php the_content(); ?>
+            </div>
+            <div id="tabs-6">
+              <?php the_field('video'); ?>
             </div>
           </div>
         <?php } else {
