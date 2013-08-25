@@ -87,6 +87,40 @@
                   <?php the_field('cp_accessories'); ?>
                 </div>
                </div>
-<?php } else {
+<?php } elseif (is_page(array('888-culti-lister', '888-cultivator'))) { ?>
+                <div id="options-accordion-2">
+          <h3>Tool Bar</h3>
+          <div>
+            <?php the_field('cl_tool_bar'); ?>
+          </div>
+          <h3>Row Spacing</h3>
+          <div>
+            <?php the_field('cl_row_spacing'); ?>
+          </div>
+          <h3>Height Adjust</h3>
+          <div>
+            <?php the_field('cl_height_adjust'); ?>
+          </div>
+          <h3>Center Coulter</h3>
+          <div>
+            <?php the_field('cl_center_coulter'); ?>
+          </div>
+          <h3>Tooling</h3>
+          <div>
+            <?php the_field('cl_tooling'); ?>
+          </div>
+          <h3>Shanks</h3>
+          <div>
+            <?php the_field('cl_shanks'); ?>
+          </div>
+          <h3>Shields and Hoods</h3>
+          <div>
+            <?php the_field('cl_shields_and_hoods'); ?>
+          </div>
+          <h3>Other Options</h3>
+          <div>
+            <?php the_field('cl_other_options'); ?>
+          </div>
+<?php } else { ?>
 	the_field('options'); 
 } ?>
