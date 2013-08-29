@@ -5,7 +5,7 @@
   </div>
   <div class="c4 end">
                     <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
                     </ul>
     <?php get_sidebar('main'); ?>
@@ -28,7 +28,7 @@
   </div>
   <div class="c4 end">
                     <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
                     </ul>
     <?php get_sidebar('main'); ?>
@@ -42,7 +42,7 @@
   </div>
   <div class="c4 end">
                     <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
                     </ul>
     <?php get_sidebar('main'); ?>
@@ -120,7 +120,7 @@
     </div>
     <div class="c4 end">
                     <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
                     </ul>
         <?php get_sidebar('main'); ?>
@@ -146,7 +146,7 @@
     </div>
     <div class="c4 end">
                     <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
                     </ul>
         <?php get_sidebar('main'); ?>
@@ -178,7 +178,7 @@
 </div>
 <div class="c4 end">
                     <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Build your tool</a></li>
+                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
                         <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
                     </ul>
         <?php get_sidebar('main'); ?>
