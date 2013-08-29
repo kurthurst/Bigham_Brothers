@@ -26,7 +26,6 @@
             // Add a page number if necessary:
             if ( $paged >= 2 || $page >= 2 )
                 echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) ); ?></title>
-        <meta name="description" content="">
         <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
         <style type="text/css">
             .no-fouc {display: none;}
@@ -44,7 +43,7 @@
     </head>
     <body>
         <div class="grid main-wrapper claustrophobic">
-            <div class="row clearfix">
+            <div class="row clearfix header">
                 <div class="c6 logo">
                     <h1><a href="<?php bloginfo(url); ?>" title="<?php bloginfo(name); ?>"><img src="<?php bloginfo(template_url); ?>/img/logo.png" alt="<?php bloginfo(name); ?>"/></a></h1>
                 </div>
