@@ -45,7 +45,7 @@
         <div class="grid main-wrapper claustrophobic">
             <div class="row clearfix header">
                 <div class="c6 logo">
-                    <h1><a href="<?php bloginfo(url); ?>" title="<?php bloginfo(name); ?>"><img src="<?php bloginfo(template_url); ?>/img/logo.png" alt="<?php bloginfo(name); ?>"/></a></h1>
+                    <h1><a href="<?php bloginfo(url); ?>" title="<?php bloginfo(name); ?>"><img src="<?php bloginfo(template_url); ?>/img/logo.jpg" alt="<?php bloginfo(name); ?>"/></a></h1>
                 </div>
                 <div class="c3 top-links">
                     <ul class="menu-top desktop">
