@@ -210,7 +210,9 @@ ul.menu-foot {
         text-align:right;
         font-size:.7em;
         letter-spacing:.2em;
-        padding:.5em;
+        padding:0 .4em;
+        text-decoration:none;
+        margin:0;
       }
       a:hover, a:active {
         color:$dkgrey;
