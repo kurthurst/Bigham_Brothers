@@ -1,14 +1,7 @@
 <?php if(is_page('home')){ ?>
 <div class="row clearfix">
-  <div class="c8">
+  <div class="c12">
     <?php echo do_shortcode( '[responsive_slider]' ); ?>
-  </div>
-  <div class="c4 end">
-                    <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
-                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
-                    </ul>
-    <?php get_sidebar('main'); ?>
   </div>
 
 </div>
@@ -27,10 +20,7 @@
   <?php endif; ?>
   </div>
   <div class="c4 end">
-                    <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
-                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
-                    </ul>
+                    
     <?php get_sidebar('main'); ?>
   </div>
 </div>
@@ -41,10 +31,7 @@
     <?php echo do_shortcode('[SLPLUS]'); ?>
   </div>
   <div class="c4 end">
-                    <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
-                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
-                    </ul>
+                    
     <?php get_sidebar('main'); ?>
   </div>
 </div>
@@ -119,10 +106,7 @@
         } ?>
     </div>
     <div class="c4 end">
-                    <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
-                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
-                    </ul>
+                    
         <?php get_sidebar('main'); ?>
     </div>
   </div>
@@ -145,10 +129,7 @@
 
     </div>
     <div class="c4 end">
-                    <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
-                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
-                    </ul>
+                    
         <?php get_sidebar('main'); ?>
     </div>
   </div>
@@ -165,7 +146,7 @@
         <h3><a href="<?php the_permalink();?>" title="<?php the_title();?>"><?php the_title(); ?></a></h3>
           <article>
             <?php 
-            $myOverview = get_post_meta($post->ID, 'overview', true);
+            $myOverview = the_field('overview');
             if ($myOverview != null) {
               echo '<p>' . $myOverview . '</p>';
             } else {
@@ -177,10 +158,7 @@
 <?php endif; ?>
 </div>
 <div class="c4 end">
-                    <ul class="menu-secondary desktop">
-                        <li><a href="<?php bloginfo(url); ?>/bbcfg/">Tool Builder</a></li>
-                        <li><a href="<?php bloginfo('url'); ?>/find-a-dealer">Find a dealer</a></li>
-                    </ul>
+                    
         <?php get_sidebar('main'); ?>
     </div>
 </div>

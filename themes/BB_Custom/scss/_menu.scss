@@ -55,18 +55,19 @@ div.menu-primary {
           height:2em;
           line-height:1.5em;
           padding:.3em .5em;
-          background: $links;   
-          color: white;
+          background: $gray;   
+          color: black;
           letter-spacing:.1em;
           font-size:.8em;
         }
 
         a:hover {
-          background: #67b021;
+          background: $hovergray;
           padding-left: .8em;
         }
         a[title=secondary], a[title=primary]{
           background: grey;
+          color:white;
           cursor:text;
         }
         a[title=secondary]:hover, a[title=primary]:hover{
@@ -197,5 +198,24 @@ ul.menu-foot {
 		}
 	}
 }
+/* top links styling */
 
+.top-links {
+  ul{
+    li{
+      display:inline;
+      float:right;
+      a{
+        color:$gray;
+        text-align:right;
+        font-size:.7em;
+        letter-spacing:.2em;
+        padding:.5em;
+      }
+      a:hover, a:active {
+        color:$dkgrey;
+      }
+    }
+  }
+}
 

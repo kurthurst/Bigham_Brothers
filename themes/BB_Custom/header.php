@@ -43,15 +43,17 @@
     </head>
     <body>
         <div class="grid main-wrapper claustrophobic">
+            <div class="row claustrophobic top-links">
+                <div class="c12">
+                    <?php wp_nav_menu( array( 'theme_location' => 'top-links', 'container_class' => 'menu-top desktop')); ?>
+                </div>
+            </div>
             <div class="row clearfix header">
                 <div class="c6 logo">
                     <h1><a href="<?php bloginfo(url); ?>" title="<?php bloginfo(name); ?>"><img src="<?php bloginfo(template_url); ?>/img/logo.jpg" alt="<?php bloginfo(name); ?>"/></a></h1>
                 </div>
-                <div class="c3 top-links">
-                    <ul class="menu-top desktop">
-                        <li><a href="<?php bloginfo('url'); ?>/events#tribe-events-pg-template">Visit us at trade shows</a></li>
-                        <li><a href="<?php bloginfo('url'); ?>/about">About our company</a></li>
-                    </ul>
+                <div class="c3">
+                    
 
                 </div>
                 <div class="c3 search end">
