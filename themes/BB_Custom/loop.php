@@ -45,7 +45,7 @@
                 the_post_thumbnail('large');
               } else {} ?>
 
-              <?php if (!is_page(array('all-products', 'literature', 'about', 'tillage', 'bed-preparation', 'cultivation', 'tool-bars-and-accessories', 'newother'))) { ?>
+              <?php if (!is_page(array('all-products', 'literature', 'about', 'tillage', 'bed-preparation', 'cultivation', 'tool-bars-and-accessories', 'newother', 'contact-us'))) { ?>
           <div id="accordion">
             <h3>Overview</h3>
             <div>
