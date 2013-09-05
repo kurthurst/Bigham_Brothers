@@ -23,7 +23,10 @@ dd.gallery-caption {
 		display:none;
 	}
 
+.searchform {width:100%;}
 }
+
+
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
@@ -49,8 +52,9 @@ dd.gallery-caption {
 	.top-links{
 		display:none;
 	}
-
+.searchform {width:100%;}
 }
+
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
@@ -69,6 +73,7 @@ dd.gallery-caption {
 	.top-links{
 		display:none;
 	}
+.searchform {width:100%;}
 
 }
 
@@ -101,4 +106,6 @@ dd.gallery-caption {
 	.top-links{
 		display:none;
 	}
+	.searchform {width:100%;}
+
  }
