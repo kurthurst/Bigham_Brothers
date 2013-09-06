@@ -1,3 +1,11 @@
 /* contains css for front page slider */
-div.rel-center {width: 100%; margin:0 auto; max-width:960px;}
-h2.slide-title {display:none;}
+
+.slides {color:#555;}
+
+.flex-direction-nav a {
+	height:60px;
+}
+
+.flexslider {
+	margin:0 20px 60px 20px;
+}

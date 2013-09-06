@@ -82,7 +82,46 @@ and (-webkit-min-device-pixel-ratio : 2)
 and (orientation : landscape),only screen
 and (-webkit-min-device-pixel-ratio : 2)
 and (orientation : portrait) { 
+	.desktop {display:none;}
+.claustrophobic {
+	padding: 1em 0 0 0;
+}
+#mobile-header {display:block;}
 	#tabs{display:none;}
+#accordion{display:block}
+dd.gallery-caption {
+	display:none;
+}
+.gallery-item {
+	width:50%!important;
+}
+
+.claustrophobic {
+	padding: 1em 0 0 0;
+}
+	.main-wrapper{
+		width:auto;
+	}
+
+	.logo {
+		padding-top:25px;
+		margin-botton:0px;
+	}
+
+	.top-links{
+		display:none;
+	}
+	.searchform {width:100%;}
+
+ }
+
+ @media only screen and (max-width:960px){
+ 	.desktop {display:none;}
+.claustrophobic {
+	padding: 1em 0 0 0;
+}
+#mobile-header {display:block;}
+#tabs{display:none;}
 #accordion{display:block}
 dd.gallery-caption {
 	display:none;

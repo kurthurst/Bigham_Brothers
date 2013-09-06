@@ -1,8 +1,6 @@
 <?php if(is_page('home')){ ?>
 <div class="row clearfix">
-  <div class="c12">
-    <?php echo do_shortcode( '[responsive_slider]' ); ?>
-  </div>
+  <?php include('slider.php'); ?>
 
 </div>
 <?php } elseif(is_home()){?>
@@ -45,7 +43,7 @@
                 the_post_thumbnail('large');
               } else {} ?>
 
-              <?php if (!is_page(array('all-products', 'literature', 'about', 'tillage', 'bed-preparation', 'cultivation', 'tool-bars-and-accessories', 'newother', 'contact-us'))) { ?>
+              <?php if (!is_page(array('all-products', 'literature', 'about', 'tillage', 'bed-preparation', 'cultivation', 'tool-bars-and-accessories', 'newother', 'contact-us', 'hippers'))) { ?>
           <div id="accordion">
             <h3>Overview</h3>
             <div>
@@ -105,10 +103,7 @@
          the_content(); 
         } ?>
     </div>
-    <div class="c4 end">
-                    
-        <?php get_sidebar('main'); ?>
-    </div>
+    
   </div>
   
 	<?php endwhile; else: ?>

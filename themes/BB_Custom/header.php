@@ -36,18 +36,20 @@
         <?php wp_head(); ?>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" type="text/css" />
         <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/fancybox/jquery.fancybox.css" type="text/css" />
+        <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/flexslider/flexslider.css" type="text/css" />
         <link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/global.css" type="text/css" />
         <script src="<?php bloginfo(template_url); ?>/fancybox/jquery.fancybox.pack.js"></script>
         <script src="<?php bloginfo(template_url); ?>/js/fitvids-ck.js"></script>
+        <script src="<?php bloginfo(template_url); ?>/flexslider/jquery.flexslider-min.js"></script>
         <script src="<?php bloginfo(template_url); ?>/js/main-ck.js"></script>
     </head>
     <body>
         <div class="grid main-wrapper claustrophobic">
             <div class="row clearfix header">
-                <div class="c6 logo">
+                <div class="c4 logo">
                     <h1><a href="<?php bloginfo(url); ?>" title="<?php bloginfo(name); ?>"><img src="<?php bloginfo(template_url); ?>/img/logo.jpg" alt="<?php bloginfo(name); ?>"/></a></h1>
                 </div>
-                <div class="c6 search end">
+                <div class="c8 search end">
                              <div class="clearfix top-links">
                                 <?php wp_nav_menu( array( 'theme_location' => 'top-links', 'container_class' => 'menu-top desktop')); ?>
                             </div>

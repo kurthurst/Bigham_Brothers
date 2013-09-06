@@ -2,6 +2,9 @@ var bbjq = jQuery.noConflict();
 
 bbjq(function(){
 	bbjq('html').removeClass('no-js').removeClass('no-fouc');
+	bbjq('.flexslider').flexslider({
+		animation:"slide"
+	});
 	bbjq( "#tabs" ).tabs();
 	bbjq("#accordion").accordion({
       heightStyle: "content"
@@ -23,5 +26,4 @@ bbjq(function(){
 	bbjq('dt.gallery-icon a').addClass('fancybox').attr('rel', 'gallery');
 	bbjq('.fancybox').fancybox();
 	bbjq('.main-wrapper').fitVids();
-
 });
