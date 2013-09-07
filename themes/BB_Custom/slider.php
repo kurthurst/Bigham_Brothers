@@ -10,9 +10,17 @@ $mySlider = new WP_Query($args); ?>
 		$mySlider->the_post(); ?>
 		<li class="clearfix">
 		<div class="c8">
-		<?php if(has_post_thumbnail()) { 
-                the_post_thumbnail('large');
-              } else {} ?>
+			<?php 
+			$mySlideLink = get_post_meta( get_the_ID(), 'slide_link', true);
+			if (! empty($mySlideLink)) { ?>
+				<a href='<?php echo $mySlideLink; ?>'>
+			<?php } else { ?>
+				<a href="#">
+			<?php } ?>
+			<?php if(has_post_thumbnail()) { 
+		            the_post_thumbnail('large');
+		          } else {} ?>
+				</a>
           </div>
 			<div class="c4 end">
 				<h2 class="slide-title"><?php the_title(); ?></h2> 

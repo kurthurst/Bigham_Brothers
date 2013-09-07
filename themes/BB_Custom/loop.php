@@ -17,20 +17,12 @@
   <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
   <?php endif; ?>
   </div>
-  <div class="c4 end">
-                    
-    <?php get_sidebar('main'); ?>
-  </div>
 </div>
 <?php wp_reset_query(); ?>
 <?php } elseif(is_page("find-a-dealer")){?>
 <div class="row clearfix">
   <div class="c8">
     <?php echo do_shortcode('[SLPLUS]'); ?>
-  </div>
-  <div class="c4 end">
-                    
-    <?php get_sidebar('main'); ?>
   </div>
 </div>
 <?php wp_reset_query(); ?>
@@ -106,7 +98,7 @@
     
   </div>
   
-	<?php endwhile; else: ?>
+  <?php endwhile; else: ?>
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
 <?php wp_reset_query();?>
@@ -122,10 +114,6 @@
       <?php the_content(); ?>
     </article>
 
-    </div>
-    <div class="c4 end">
-                    
-        <?php get_sidebar('main'); ?>
     </div>
   </div>
 <?php endwhile; else: ?>
@@ -152,10 +140,6 @@
 <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
 </div>
-<div class="c4 end">
-                    
-        <?php get_sidebar('main'); ?>
-    </div>
 </div>
 <?php wp_reset_query();?>
 <?php } ?>
